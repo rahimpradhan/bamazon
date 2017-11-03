@@ -18,11 +18,8 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   // run the display inventory function after the connection is made to prompt the user
-  // displayInventory();
-
   displayInventory();
-
-  // postAuction();
+ 
 });
 
 function postAuction() {
@@ -65,8 +62,6 @@ function postAuction() {
 
             var remaining = itemAmt - amount;
 
-            console.log(remaining);
-
             var update_items = [remaining, answer.item_id];
 
            connection.query("UPDATE products SET stock_quantity = ? WHERE item_id = ?", update_items,
@@ -76,20 +71,14 @@ function postAuction() {
 
             console.log("Your total is " + res[0].price * answer.amount)
           }
+        }if(amount > parseInt(itemAmt)){
+          console.log("We dont have these in stock");
         }
+         postAuction();
       })
   })
 }
       
-
-
-
-
-
-
-
-
-
 function displayInventory(){
   // query the database for all items 
   connection.query("SELECT * FROM products", function(err, results) {
@@ -101,6 +90,15 @@ function displayInventory(){
         postAuction();  
   });
 }
+
+
+
+
+
+
+
+
+
   
 
 
