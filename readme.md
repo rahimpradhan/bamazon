@@ -14,7 +14,7 @@ By running bamazonCustomer.js, the user will be able to view the current invento
 
 ![First Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon1.PNG)
 
-The user will be prompted for the item ID and the quantity. If the item is in stock, an invoice will be presented.
+The user will be prompted for the item ID and the quantity. If the item is in stock, an invoice will be presented and the database will be updated.
 
 
 ![Second Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon2.PNG)
