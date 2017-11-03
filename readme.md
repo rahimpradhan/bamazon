@@ -13,3 +13,13 @@ The interface allows the user to view the current inventory of store items: item
 By running bamazonCustomer.js, the user will be able to view the current inventory of items.
 
 ![First Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon1.PNG)
+
+The user will be prompted for the item ID and the quantity. If the item is in stock, an invoice will be presented.
+
+
+![Second Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon2.PNG)
+
+
+If the item is not in stock, a message will be provided and the user will be prompted again.
+
+![Third Image](https://github.com/rahimpradhan/bamazon/blob/master/images/bamazon3.PNG)
