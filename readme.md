@@ -12,5 +12,4 @@ The interface allows the user to view the current inventory of store items: item
 
 By running bamazonCustomer.js, the user will be able to view the current inventory of items.
 
-![GitHub Logo](/images/bamazon1.png)
-Format: ![Alt Text](url)
+![First Image](images/bamazon1.png)
